@@ -11,6 +11,16 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public'
     },
+    // devServer: {
+    //     contentBase: "./public",
+    //     port: 9000
+    // }, nao funciona mais
+    devServer: {
+        static: {
+            directory: __dirname + '/public'
+        },
+        port: 9000
+    },
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
