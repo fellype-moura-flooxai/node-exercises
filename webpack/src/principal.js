@@ -1,6 +1,5 @@
-const Pessoa = require('./pessoa')
-
-//import Pessoa from './pessoa'
+import Pessoa from './pessoa'
+import './modulos/moduloA'
 
 const atendente = new Pessoa
 console.log(atendente.comprimentar())
